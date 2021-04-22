@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: #3d71a5;
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right bottom, from(#3498db), to(#405d7b)) no-repeat;
+  background: linear-gradient(to bottom right, #3498db, #405d7b) no-repeat;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app-container header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 8rem 0rem 2rem 0rem;
+}
+
+.app-container header, .app-container form {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container #task-input, .app-container .task-submit-button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.app-container .task-submit-button {
+  color: #405d7b;
+  background: white;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.app-container .task-submit-button:hover {
+  background: #405d7b;
+  color: white;
+}
+
+.app-container .task-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.app-container .task-list-container .task-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.app-container .task-list-container .task-list .todo-task {
+  margin: 0.5rem;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.app-container .task-list-container .task-list .todo-task .todo-task-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 1em;
+}
+
+.app-container .task-list-container .task-list .todo-task .task-complete-button, .app-container .task-list-container .task-list .todo-task .task-delete-button {
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  outline: none;
+  margin-left: 0.1em;
+}
+
+.app-container .task-list-container .task-list .todo-task .task-complete-button {
+  background: #54f07d;
+}
+
+.app-container .task-list-container .task-list .todo-task .task-delete-button {
+  background: #f05656;
+}
+
+#task-input {
+  border: none;
+}
+
+.fa-trash-alt, .fa-check-circle {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  -webkit-transform: translateY(8rem) rotatez(20deg);
+          transform: translateY(8rem) rotatez(20deg);
+  opacity: 0;
+}
+/*# sourceMappingURL=main.css.map */
