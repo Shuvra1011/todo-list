@@ -33,9 +33,58 @@
           align-items: center;
 }
 
+.app-container select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  padding: 0.5rem;
+  background: white;
+}
+
+.app-container select option {
+  font-size: 1.5rem;
+}
+
+.app-container .select {
+  margin: 1rem;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.app-container .select::after {
+  content: "\25BC";
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0;
+  right: 0;
+  background: white;
+  color: #405d7b;
+  padding: 0.9rem;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.app-container .select:hover::after {
+  background: #405d7b;
+  color: white;
+}
+
+.app-container .select select {
+  text-align-last: center;
+  color: black;
+  cursor: pointer;
+  width: 18rem;
+  padding: 0.5rem 3.5rem 0.5rem 1rem;
+}
+
 .app-container #task-input, .app-container .task-submit-button {
   padding: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   border: none;
   outline: none;
   background-color: white;

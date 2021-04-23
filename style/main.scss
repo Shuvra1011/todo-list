@@ -24,9 +24,58 @@
         align-items: center;
     }
 
+
+    select {
+        appearance: none;
+        outline: none;
+        border: none;
+        font-size: 1.7rem;
+        padding: 0.5rem;
+        background: white;
+
+    }
+
+    select option{
+        font-size: 1.5rem;
+    }
+
+    .select {
+        margin: 1rem;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        &::after {
+            content: "\25BC";
+            position: absolute;
+            font-size: 1.5rem;
+            top: 0;
+            right: 0;
+            background: white;
+            color: #405d7b;
+            padding: 0.9rem;
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+
+        &:hover::after {
+            background: #405d7b;
+            color:white;
+
+        }
+    
+        select {
+            text-align-last: center ;
+            color: black;
+            cursor: pointer;
+            width: 18rem;
+            padding: 0.5rem 3.5rem 0.5rem 1rem;
+
+        }
+    }
+
     #task-input, .task-submit-button {
         padding: 0.5rem;
-        font-size: 2rem;
+        font-size: 1.7rem;
         border: none;
         outline: none;
         background-color: white;
