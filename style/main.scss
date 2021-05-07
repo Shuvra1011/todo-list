@@ -101,7 +101,7 @@
         transition: all 0.5s ease;
 
         .task-list {
-            min-width: 30%;
+            min-width: 40%;
             list-style: none;
 
             
@@ -118,7 +118,7 @@
                 .todo-task-info{
                     flex: 1;
                     text-align: center;
-                    padding: 1em;
+                    padding: 0em;
                 }
 
                 .task-complete-button, .task-delete-button {
@@ -128,7 +128,7 @@
                     padding: 1rem;
                     cursor: pointer;
                     outline: none;
-                    margin-left: 0.1em;
+                    // margin-left: 0.1em;
                 }
 
                 .task-complete-button{
