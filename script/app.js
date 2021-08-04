@@ -1,25 +1,20 @@
+
+// DOM Elements
 const taskInput = document.querySelector('#task-input');
 const taskSubmitButton = document.querySelector('.task-submit-button');
 const taskList = document.querySelector('.task-list');
 const filterOption = document.querySelector('taskStatus');
 
-
+//Event-listeners
 window.addEventListener('load', getTasksFromStorage );
-
 taskSubmitButton.addEventListener('click', addTask);
-
 taskInput.addEventListener('focus', function () {
     taskInput.setAttribute("placeholder", "");
-
 });
-
-
 taskInput.addEventListener('focusout', function () {
     taskInput.setAttribute("placeholder", "Enter Task");
 });
-
 taskStatus.addEventListener('change', filterTaskList)
-
 taskList.addEventListener('click', (e) => {
     if (e.target.classList[0] === "task-delete-button") {
         const listItem = e.target.parentElement;
